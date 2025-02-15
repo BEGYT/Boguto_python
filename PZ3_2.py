@@ -3,7 +3,6 @@ def determine_color():
         try:
             wavelength = float(input("Введите длину волны в нанометрах (нм): "))
             
-            # Определение цвета в зависимости от длины волны
             if 620 <= wavelength <= 750:
                 color = "Красный"
             elif 590 <= wavelength < 620:
@@ -20,7 +19,7 @@ def determine_color():
                 color = "Длина волны вне видимого спектра."
             
             print("Цвет:", color)
-            break  # Выход из цикла при успешном вводе
+            break  
         except ValueError:
             print("Неправильно ввели! Пожалуйста, введите числовое значение.")
 
